@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+
+<form method="POST" action='.'> {% csrf_token %}
+	<!-- <input name="url" type="text" placeholder="Somthing Else"/> -->
+	{{form.as_p}}
+	<input type="submit" value="Submit">
+</form>
