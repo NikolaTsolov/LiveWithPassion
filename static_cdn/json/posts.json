@@ -1,0 +1,67 @@
+[
+	{"title": "Музика", "id":1, "description": "Това е статия за музика", "publishDate": "2016-01-03",
+						"comments": [
+							{"id": 1, "text": "Classic Rock"},
+							{"id": 2, "text": "1970-1980"}
+						],
+						"image": "/img/music.jpg"
+	},
+	{"title": "Филми", "id":2, "description": "Това е статия за филми", "publishDate": "2016-01-04",
+						"comments": [
+							{"id": 1, "text": "All Time Greatest"},
+							{"id": 2, "text": "Top 100"}
+						],
+						"image": "/img/movies.jpg"
+	},
+	{"title": "Книги", "id":3, "description": "Това е статия за книги", "publishDate": "2016-01-05",
+						"comments": [
+							{"id": 1, "text": "Game Of Thrones"},
+							{"id": 2, "text": "Is John Snow Dead"}
+						],
+						"image": "/img/books.jpg"
+	},
+	{"title": "Спорт", "id":4, "description": "Това е статия за спорт", "publishDate": "2016-01-06",
+						"comments": [
+							{"id": 1, "text": "Basketball"},
+							{"id": 2, "text": "NBA Matches"}
+						],
+						"image": "/img/sport.jpg"
+},
+	{"title": "Политика", "id":5, "description": "Политика", "publishDate": "2016-01-07",
+						"comments": [
+							{"id": 1, "text": "Икономиката в България"},
+							{"id": 2, "text": "Финансова криза"}
+						],
+						"image": "/img/politics.jpg"
+},
+	{"title": "Изкуство", "id":6, "description": "Изкуство", "publishDate": "2016-01-08", "image": "/img/art.jpg"
+},
+	{"title": "Климат", "id":7, "description": "Проблеми в Климата", "publishDate": "2016-01-09",
+						"comments": [
+							{"id": 1, "text": "Озоновият слой е започнал да се възтановява"},
+							{"id": 2, "text": "Доналд Тръмп: 'Промените в климата няма да ми докарат повече пари!'"}
+						],
+						"image": "/img/climate.jpg"
+},
+	{"title": "Технологии", "id":8, "description": "Технологии", "publishDate": "2016-01-10",
+						"comments": [
+							{"id": 1, "text": "1 GB/S download speed if Elon Musk sends his 4000 satelites into space!"},
+							{"id": 2, "text": "How will apple try to evolve and stop making bigger phones!"}
+						],
+						"image": "/img/technology.jpg"
+	},
+	{"title": "Gamers", "id":9, "description": "Gamers", "publishDate": "2016-01-11",
+						"comments": [
+							{"id": 1, "text": "Is League of Legends addictive! Quit now... ;)"},
+							{"id": 2, "text": "A new tribute for Carrie Fisher! Star Wars Rogue One: Best ending ever!"}
+						],
+						"image": "/img/gamers.jpg"
+},
+	{"title": "Коли", "id":10, "description": "Коли", "mainContent": "dadad", "publishDate": "2016-01-12",
+						"comments": [
+							{"id": 1, "text": "Audi vs BMW you decide... ;)"},
+							{"id": 2, "text": "Tesla cars are the future"}
+						],
+						"image": "/img/cars.jpg"
+}
+]

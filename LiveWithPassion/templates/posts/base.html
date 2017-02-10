@@ -1,0 +1,60 @@
+{% load static %}
+<html>
+<head>
+    <title>{% block head_title %} Posts {% endblock head_title %}</title>
+
+    <link rel='stylesheet' href='{% static "/css/base.css" %}'/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+{% block body %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+{% include "posts/messages.html" %}
+
+      {% if messages %}
+    <div>
+      <strong>Messages:</strong>
+      <ul>
+  {% for message in messages %}
+  <li>{{message}}</li>
+  {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div>
+      <strong>Menu:</strong>
+      <ul>
+  {% if user.is_authenticated %}
+  <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
+  <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
+  {% else %}
+  <li><a href="{% url 'account_login' %}">Sign In</a></li>
+  <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+  {% endif %}
+      </ul>
+    </div>
+
+<div class="container">
+{% block content %}
+{% endblock content %}
+{% endblock %}
+{% block extra_body %}
+    {% endblock %}
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
